@@ -1,42 +1,20 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* global */
+@import './global/global.css';
+@import './global/header.css';
 
-ul {
-    list-style: none;
-}
+/* home */
+@import './home/introduction.css';
+@import './home/technology.css';
+@import './home/partners.css';
+@import './home/statements.css';
 
-a {
-    text-decoration: none;
-}
+/* utilities */
+@import './utilities/components.css';
+@import './utilities/typography.css';
+@import './utilities/colors.css';
 
-.header-bg {
-    background-color: #000000;
-}
+/* bikes */
+@import './bikes/bikes-list.css';
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-
-    padding: 20px;
-    max-width: 1200px;
-    margin-left: 0 auto;
-
-}
-
-.header-menu {
-    display: flex;
-    gap: 40px;
-}
-
-.header-menu a {
-    display: inline-block;
-
-    padding: 16px 0;
-    color: #ffffff;
-    font-size: 18px;
-}
+/* insurance */
+@import './insurances/insurance.css';
