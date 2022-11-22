@@ -1,0 +1,36 @@
+.insurance-benefits-bg {
+    background-color: var(--color-12);
+}
+
+.insurance-benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.insurance-benefits h2 {
+    margin-bottom: 60px;
+}
+
+.insurance-benefits ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    gap: 40px 80px;
+}
+
+.insurance-benefits h3, .insurance-benefits img {
+    margin-bottom: 8px;
+}
+
+@media (max-width:800px) {
+    .insurance-benefits {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .insurance-benefits h2 {
+        margin-bottom: 40px;
+    }
+    .insurance-benefits ul {
+        gap: 20px;
+    }
+}

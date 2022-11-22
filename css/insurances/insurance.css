@@ -1,14 +1,17 @@
-.insurance-bg {
+.insurances-bg {
     background: var(--color-11);
 }
 
 .insurance {
-    padding-top: 60px;
     padding-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
+}
+
+#insurance .insurance {
+    padding-top: 0px;
 }
 
 .insurance h2 {
@@ -20,6 +23,8 @@
     padding: 32px 32px 32px 60px;
     display: grid;
     grid-template-columns: 1fr auto;
+
+    border-radius: 4px;
 }
 
 .insurance-item h3 {

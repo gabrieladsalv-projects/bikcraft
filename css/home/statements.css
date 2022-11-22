@@ -14,6 +14,8 @@
 .statement-content {
     padding: 40px 40px 80px 80px;
     align-self: end;
+    background: url('../../img/dec/bottom-right-p.svg') 
+    no-repeat bottom 40px;
 }    
 
 .statement-content p {
@@ -35,14 +37,20 @@
 .statement::before {
     content: '“';
     left: 720px;
-    top: 3400px;
+    top: 3360px;
 }
 
 .statement::after {
     content: '”';
     left: 840px;
-    top: 3580px;
+    top: 3525px;
 
+}
+
+@media (min-width:1200px) {
+    .statement img {
+        max-height: 520px;
+    }
 }
 
 @media (max-width:800px) {

@@ -20,6 +20,9 @@
     font: 400 1.125rem/1.35 'Poppins', sans-serif;
 
     max-width: max-content;
+
+    border: none;
+    cursor: pointer;
  }
  
  .button:hover {
@@ -42,6 +45,20 @@
     background: var(--color-9);
 }
 
+.button.arrow::after {
+    content:'' ;
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 17px;
+    background: url('../../img/icones/seta.svg');
+    transition: transform 0.2s;
+}
+
+.button.arrow:hover::after {
+    transform: translateX(4px);
+}
+
 .link {
     display: inline-block;
     color: var(--color-p1);
@@ -59,4 +76,32 @@
 
 .link:hover {
     color: var(--color-0);
+}
+
+
+/* intern titles */
+.title-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--color-11);
+}
+
+.title {
+    background: url('../../img/dec/top-right.svg') no-repeat top right 20px;
+}
+
+.title p {
+    margin-bottom: 4px;
+}
+
+@media (max-width:800px) {
+    .title {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .title p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
 }
